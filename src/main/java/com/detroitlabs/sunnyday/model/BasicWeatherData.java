@@ -5,6 +5,10 @@ public class BasicWeatherData {
     private double temp;
     private double humidity;
 
+    public String getTempFString() {
+        return String.format("%.1f", getTempF());
+    }
+
     public double getTempF() {
         return (getTemp() - 273.15) * 1.8 + 32;
     }

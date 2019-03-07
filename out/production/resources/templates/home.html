@@ -7,8 +7,8 @@
     <title>Sunny Day | Home</title>
 </head>
 <body>
-    <p th:text="'The current temperature in ' + ${cityName} + ' is ' + ${basicWeatherData.getTempF()} + ' degrees Fahrenheit.'" />
+    <p th:text="'The current temperature in ' + ${cityName} + ' is ' + ${basicWeatherData.getTempFString()} + ' degrees Fahrenheit.'" />
     <p th:text="'The current humdity is ' + ${basicWeatherData.getHumidity()} + '%.'" />
-    <p th:text="'Sunrise was at ' + ${timeZoneData.getSunriseString()} + ', and sunset will be at ' + ${timeZoneData.getSunsetString()}" />
+    <p th:text="'Sunrise was at ' + ${timeZoneData.getSunriseString()} + ', and sunset will be at ' + ${timeZoneData.getSunsetString() + '.'}" />
 </body>
 </html>
