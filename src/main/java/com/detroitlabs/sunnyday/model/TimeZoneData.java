@@ -9,11 +9,11 @@ public class TimeZoneData {
     private long sunset;
 
     public String getSunriseString() {
-            return Instant.ofEpochMilli(sunrise).atZone(ZoneId.of("America/Detroit")).toLocalDateTime().toString();
+            return Instant.ofEpochSecond(sunrise).atZone(ZoneId.of("America/Detroit")).toLocalDateTime().toString();
     }
 
     public String getSunsetString() {
-        return Instant.ofEpochMilli(sunset).atZone(ZoneId.of("America/Detroit")).toLocalDateTime().toString();
+        return Instant.ofEpochSecond(sunset).atZone(ZoneId.of("America/Detroit")).toLocalDateTime().toString();
     }
 
     public long getSunrise() {
